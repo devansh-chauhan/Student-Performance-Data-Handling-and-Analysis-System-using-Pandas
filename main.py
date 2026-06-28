@@ -1,31 +1,12 @@
-from src.load_data import load_data
-from src.inspect_data import inspect_data
-from src.clean_data import clean_data
-from src.transform import transform_data
-from src.filter_data import filter_data
-from src.analyze import analyze_data
-from src.sort_data import sort_data
-from src.group_data import group_data
-from src.statistics import statistical_analysis
-from src.report import generate_report
-
-DATASET_PATH = "data/student_dataset_v2.csv"
+from src.menu import menu
 
 def main():
-    df = load_data(DATASET_PATH)
+    print("=" * 60)
+    print("STUDENT PERFORMANCE DATA HANDLING AND ANALYSIS SYSTEM")
+    print("=" * 60)
 
-    if df is not None:
-        print("\nData loaded successfully!!!")
-        inspect_data(df)
-        df = clean_data(df)
-        df = transform_data(df)
-        df = filter_data(df)
-        df = analyze_data(df)
-        df = sort_data(df)
-        df = group_data(df)
-        df = statistical_analysis(df)
+    menu()
 
-    generate_report(df)
 
 if __name__ == "__main__":
     main()
