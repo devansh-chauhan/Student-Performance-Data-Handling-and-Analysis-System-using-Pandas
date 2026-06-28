@@ -1,28 +1,36 @@
-import os
-
-def filter_data(df):
+def analyze_data(df):
 
     print("\n" + "=" * 60)
-    print("DATA FILTERING")
+    print("DATA ANALYSIS")
     print("=" * 60)
 
-    os.makedirs("output", exist_ok = True)
+    total_students = len(df)
 
-    toppers = df[df["Grade"] == "A"]
-    toppers.to_csv("output/toppers.csv", index = False)
+    average_marks = df["Marks"].mean()
+    highest_marks = df["Marks"].max()
+    lowest_marks = df["Marks"].min()
 
-    failed_students = df[df["Result"] == "Fail"]
-    failed_students.to_csv("output/failed_students.csv", index = False)
+    average_attendance = df["Attendance"].mean()
+    average_study_hours = df["StudyHours"].mean()
 
-    low_attendance = df[df["Attendance"] < 75]
-    low_attendance.to_csv("output/low_attendance.csv", index=False)
+    passed_students = len(df[df["Result"] == "Pass"])
+    failed_students = len(df[df["Result"] == "Fail"])
 
-    high_study_hours = df[df["StudyHours"] > 8]
-    high_study_hours.to_csv("output/high_study_hours.csv", index=False)
+    pass_percentage = (passed_students / total_students) * 100
+    fail_percentage = (failed_students / total_students) * 100
 
-    print(f"Top Performers: {len(toppers)}")
-    print(f"Failed Students: {len(failed_students)}")
-    print(f"Attendance < 75%: {len(low_attendance)}")
-    print(f"Study Hours > 8: {len(high_study_hours)}")
+    grade_distribution = df["Grade"].value_counts()
+
+    print(f"Total Students      : {total_students}")
+    print(f"Average Marks       : {average_marks:.2f}")
+    print(f"Highest Marks       : {highest_marks}")
+    print(f"Lowest Marks        : {lowest_marks}")
+    print(f"Average Attendance  : {average_attendance:.2f}")
+    print(f"Average Study Hours : {average_study_hours:.2f}")
+    print(f"Pass Percentage     : {pass_percentage:.2f}%")
+    print(f"Fail Percentage     : {fail_percentage:.2f}%")
+
+    print("\nGrade Distribution")
+    print(grade_distribution)
 
     return df
