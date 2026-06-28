@@ -7,6 +7,7 @@ from src.analyze import analyze_data
 from src.sort_data import sort_data
 from src.group_data import group_data
 from src.statistics import statistical_analysis
+from src.report import generate_report
 
 DATASET_PATH = "data/student_dataset_v2.csv"
 
@@ -23,6 +24,8 @@ def main():
         df = sort_data(df)
         df = group_data(df)
         df = statistical_analysis(df)
+
+    generate_report(df)
 
 if __name__ == "__main__":
     main()
