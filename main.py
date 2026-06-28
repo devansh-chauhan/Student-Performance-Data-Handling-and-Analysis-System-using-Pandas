@@ -2,6 +2,7 @@ from src.load_data import load_data
 from src.inspect_data import inspect_data
 from src.clean_data import clean_data
 from src.transform import transform_data
+from src.analyze import filter_data
 
 DATASET_PATH = "data/student_dataset_v2.csv"
 
@@ -13,6 +14,6 @@ def main():
         inspect_data(df)
         df = clean_data(df)
         df = transform_data(df)
-
+        df = filter_data(df)
 if __name__ == "__main__":
     main()
