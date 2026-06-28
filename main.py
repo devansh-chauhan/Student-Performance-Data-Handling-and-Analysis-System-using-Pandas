@@ -6,6 +6,7 @@ from src.filter_data import filter_data
 from src.analyze import analyze_data
 from src.sort_data import sort_data
 from src.group_data import group_data
+from src.statistics import statistical_analysis
 
 DATASET_PATH = "data/student_dataset_v2.csv"
 
@@ -21,6 +22,7 @@ def main():
         df = analyze_data(df)
         df = sort_data(df)
         df = group_data(df)
+        df = statistical_analysis(df)
 
 if __name__ == "__main__":
     main()
