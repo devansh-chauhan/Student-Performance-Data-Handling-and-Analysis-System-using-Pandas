@@ -4,6 +4,7 @@ from src.clean_data import clean_data
 from src.transform import transform_data
 from src.filter_data import filter_data
 from src.analyze import analyze_data
+from src.sort_data import sort_data
 
 DATASET_PATH = "data/student_dataset_v2.csv"
 
@@ -17,7 +18,7 @@ def main():
         df = transform_data(df)
         df = filter_data(df)
         df = analyze_data(df)
+        df = sort_data(df)
 
-        
 if __name__ == "__main__":
     main()
