@@ -131,6 +131,10 @@ Student-Performance-Data-Handling-and-Analysis-System-using-Pandas/
 │   ├── grouped_report.csv
 │   ├── correlation_matrix.csv
 │   ├── grade_distribution.csv
+│   └── attendance_distribution.png
+│   └── marks_histogram.png
+│   └── performance_score.png
+│   └── grade_distribution.png
 │   └── report.csv
 │
 ├── src/
@@ -143,6 +147,8 @@ Student-Performance-Data-Handling-and-Analysis-System-using-Pandas/
 │   ├── sort_data.py
 │   ├── group_data.py
 │   ├── statistics.py
+|   ├── menu.py
+|   ├── visualization.py
 │   └── report.py
 │
 ├── main.py
