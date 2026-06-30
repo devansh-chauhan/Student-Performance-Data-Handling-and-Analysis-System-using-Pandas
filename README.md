@@ -1,10 +1,10 @@
-# 📊 Student Performance Data Handling and Analysis System using Pandas
+#  Student Performance Data Handling and Analysis System using Pandas
 
 A Python-based data analysis project that demonstrates the complete data processing lifecycle using the **Pandas** library. This project loads, cleans, transforms, analyzes, and generates reports from a student performance dataset.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Educational institutions collect large amounts of student data such as study hours, attendance, and examination marks. Raw datasets often contain missing values, duplicate records, and inconsistencies that make analysis difficult.
 
@@ -20,7 +20,7 @@ This project automates the complete data handling process by:
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### Module 1 – Data Loading
 
@@ -100,7 +100,7 @@ This project automates the complete data handling process by:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python 3
 * Pandas
@@ -111,7 +111,7 @@ This project automates the complete data handling process by:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 Student-Performance-Data-Handling-and-Analysis-System-using-Pandas/
@@ -153,7 +153,7 @@ Student-Performance-Data-Handling-and-Analysis-System-using-Pandas/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 Clone the repository:
 
@@ -175,7 +175,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Project
+##  Running the Project
 
 Execute:
 
@@ -185,7 +185,7 @@ python main.py
 
 ---
 
-## 📂 Output Files
+##  Output Files
 
 The program generates the following files inside the `output` folder:
 
@@ -204,7 +204,7 @@ The program generates the following files inside the `output` folder:
 
 ---
 
-## 📊 Skills Demonstrated
+##  Skills Demonstrated
 
 * Data Cleaning
 * Data Preprocessing
@@ -219,7 +219,7 @@ The program generates the following files inside the `output` folder:
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 This project helped strengthen practical knowledge of:
 
@@ -233,7 +233,7 @@ This project helped strengthen practical knowledge of:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Devansh Chauhan**
 
@@ -241,6 +241,6 @@ GitHub: https://github.com/devansh-chauhan
 
 ---
 
-## 📜 License
+##  License
 
 This project was developed for educational purposes as part of a Python and Pandas coursework assignment.

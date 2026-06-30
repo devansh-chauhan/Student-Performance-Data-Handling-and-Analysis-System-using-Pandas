@@ -19,9 +19,9 @@ def menu():
 
     while True:
 
-        print("\n" + "=" * 50)
+        print("\n" + "=" * 60)
         print(" STUDENT PERFORMANCE DATA HANDLING AND ANALYSIS SYSTEM ")
-        print("=" * 50)
+        print("=" * 60)
 
         print("\n1. Load Data")
         print("2. Inspect Data")
